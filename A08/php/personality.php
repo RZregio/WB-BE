@@ -14,8 +14,9 @@ while ($personality = mysqli_fetch_assoc($personalityResult)) {
         $personality['longDescription'],
         $personality['color'],
         $personality['image'],
-        $personality['status']
+        $personality['status'],
     );
+
     $i++;
 }
 ?>

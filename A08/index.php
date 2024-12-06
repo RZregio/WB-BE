@@ -22,16 +22,18 @@ include('php/personality.php');
 
 
 <body style="user-select: none">
-    <?php include("php/navBar.php")?>
+    <?php include("php/navBar.php") ?>
     <!-- Header -->
     <header class="w3-container w3-dark-gray w3-center" style="padding:31vh 16px">
         <h1 class="w3-margin w3-jumbo">Welcome to inSighTeen</h1>
         <p class="w3-xlarge" style="font-weight: bold">RZ Edition</p>
-        <a href="optimisticPage.php"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button></a>
+        <a href="optimisticPage.php"><button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get
+                Started</button></a>
     </header>
 
     <!-- First Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #<?php echo $personalities[0][4] ?>">
+    <div class="w3-row-padding w3-padding-64 w3-container"
+        style="background-color: #<?php echo $personalities[0][4] ?>">
         <div class="w3-content">
             <div class="w3-twothird">
                 <h1 class="element"><?php echo $personalities[0][1] ?></h1>
@@ -48,7 +50,8 @@ include('php/personality.php');
     </div>
 
     <!-- Second Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #<?php echo $personalities[1][4] ?>">
+    <div class="w3-row-padding w3-padding-64 w3-container"
+        style="background-color: #<?php echo $personalities[1][4] ?>">
         <div class="w3-content">
             <div class="w3-third w3-center">
                 <img class="element" src="assets/<?php echo $personalities[1][5] ?>" alt="Anger | Inside Out"
@@ -66,7 +69,8 @@ include('php/personality.php');
 
 
     <!-- Third Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #<?php echo $personalities[2][4] ?>">
+    <div class="w3-row-padding w3-padding-64 w3-container"
+        style="background-color: #<?php echo $personalities[2][4] ?>">
         <div class="w3-content">
             <div class="w3-twothird">
                 <h1 class="element"><?php echo $personalities[2][1] ?></h1>
@@ -83,7 +87,8 @@ include('php/personality.php');
     </div>
 
     <!-- Fourth Grid -->
-    <div class="w3-row-padding w3-padding-64 w3-container" style="background-color: #<?php echo $personalities[3][4] ?>">
+    <div class="w3-row-padding w3-padding-64 w3-container"
+        style="background-color: #<?php echo $personalities[3][4] ?>">
         <div class="w3-content">
             <div class="w3-third w3-center">
                 <img class="element" src="assets/<?php echo $personalities[3][5] ?>" alt="Anger | Inside Out"
@@ -101,17 +106,8 @@ include('php/personality.php');
 
 
 
-    <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-        <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-    </div>
-
-    <?php include("php/footer.php")?>
+    <?php include("php/footer.php") ?>
     <script src="js/scrollAnimation.js"></script>
 </body>
 
 </html>
-
-
-
-
-INSERT INTO `islandcontents`(`islandOfPersonalityID`, `image`, `content`, `color`) VALUES (,'','','','')
