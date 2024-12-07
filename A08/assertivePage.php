@@ -32,54 +32,28 @@ include('php/assertiveContent.php');
 
 
 
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[0][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">The Alps and The Seeker | Parallax Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[0][2] ?></h5>
-            </div>
+    <!-- Content Grid -->
+    <?php
+    $j = 0;
+    for ($j; $j < $c; $j++) {
+        ?>
+        <div class="w3-row-padding w3-container"
+            style="background-color: #<?php echo $personalitiesContent[$j][3] ?>; padding-top: 100px">
+            <div class="w3-content">
+                <div class="w3-rest">
+                    <h1 class="element"><?php echo $titles[$j] ?></h1>
+                    <h5 class="element w3-padding-32"><?php echo $personalitiesContent[$j][2] ?></h5>
+                </div>
 
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/ast/<?php echo $personalitiesContent[0][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
-            </div>
-        </div>
-    </div>
-
-    <!-- Second Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[1][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">Github PortFolio | HTML Website Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[1][2] ?></h5>
-            </div>
-
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/ast/<?php echo $personalitiesContent[1][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
+                <div class="w3-rest w3-center">
+                    <img class="element" src="assets/ast/<?php echo $personalitiesContent[$j][1] ?>" alt="MCL | Participants"
+                        style="height: auto; width: 100%; margin-bottom: 5vh;">
+                </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- Third Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[2][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">Film Making | RPH Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[2][2] ?></h5>
-            </div>
-
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/ast/<?php echo $personalitiesContent[2][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
-            </div>
-        </div>
-    </div>
+        <?php
+    }
+    ?>
 
 
 

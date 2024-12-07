@@ -70,7 +70,7 @@
         <p>where creativity meets technology.</p>
         <p>Follow me from this adventure and</p>
         <p>Let's explore together!</p>
-        <a href="projects.html">
+        <a href="projects.php">
           <button class="project">
             See My Projects
           </button>

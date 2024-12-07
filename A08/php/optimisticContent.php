@@ -7,17 +7,21 @@ $personalityContentQuery = "SELECT ip.*, ic.islandContentID, ic.islandOfPersonal
 $personalityContentResult = executeQuery($personalityContentQuery);
 
 $personalitiesContent = array();
-$i = 0;
+$titles = array(
+    'Madulang Sabayang Pagbigkas | MCL Edition',
+    'Collage Making | Nutrition Month Edition',
+    'Modern Dance Competition | St-Anne Edition'
+);
+$c = 0;
 
 while ($personalityContent = mysqli_fetch_assoc($personalityContentResult)) {
 
-    $personalitiesContent[$i] = array(
+    $personalitiesContent[$c] = array(
         $personalityContent['islandOfPersonalityID'],
         $personalityContent['contentImage'],
         $personalityContent['content'],
         $personalityContent['contentColor']
     );
-
-    $i++;
+    $c++;
 }
 ?>

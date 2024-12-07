@@ -32,56 +32,30 @@ include('php/optimisticContent.php');
 
 
 
-    <!-- First Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[0][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">Madulang Sabayang Pagbigkas | MCL Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[0][2] ?></h5>
-            </div>
+    <!-- Content Grid -->
+    <?php
+    $j = 0;
+    for ($j; $j < $c; $j++) {
+        ?>
+        <div class="w3-row-padding w3-container"
+            style="background-color: #<?php echo $personalitiesContent[$j][3] ?>; padding-top: 100px">
+            <div class="w3-content">
+                <div class="w3-rest">
+                    <h1 class="element"><?php echo $titles[$j] ?></h1>
+                    <h5 class="element w3-padding-32"><?php echo $personalitiesContent[$j][2] ?></h5>
+                </div>
 
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/op/<?php echo $personalitiesContent[0][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
-            </div>
-        </div>
-    </div>
-
-    <!-- Second Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[1][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">Collage Making | Nutrition Month Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[1][2] ?></h5>
-            </div>
-
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/op/<?php echo $personalitiesContent[1][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
+                <div class="w3-rest w3-center">
+                    <img class="element" src="assets/op/<?php echo $personalitiesContent[$j][1] ?>" alt="MCL | Participants"
+                        style="height: auto; width: 100%; margin-bottom: 5vh;">
+                </div>
             </div>
         </div>
-    </div>
+    <?php
+    }
+    ?>
 
-
-    <!-- Third Grid -->
-    <div class="w3-row-padding w3-container"
-        style="background-color: #<?php echo $personalitiesContent[2][3] ?>; padding-top: 100px">
-        <div class="w3-content">
-            <div class="w3-rest">
-                <h1 class="element">Modern Dance Competition | St-Anne Edition</h1>
-                <h5 class="element w3-padding-32"><?php echo $personalitiesContent[2][2] ?></h5>
-            </div>
-
-            <div class="w3-rest w3-center">
-                <img class="element" src="assets/op/<?php echo $personalitiesContent[2][1] ?>" alt="MCL | Participants"
-                    style="height: auto; width: 100%; margin-bottom: 5vh;">
-            </div>
-        </div>
-    </div>
-
-
+    
 
     <?php include("php/footer.php") ?>
     <script src="js/scrollAnimation.js"></script>
